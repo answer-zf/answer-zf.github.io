@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>git</title>
+    <url>/2019/11/01/git/</url>
+    <content><![CDATA[<p><a href="https://zh.wikipedia.org/wiki/Git" target="_blank" rel="noopener">维基百科 - Git</a></p>
+<h2 id="Git-介绍"><a href="#Git-介绍" class="headerlink" title="Git 介绍"></a>Git 介绍</h2><ul>
+<li><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/" target="_blank" rel="noopener">Git教程 - 廖雪峰</a></li>
+<li><a href="http://git.oschina.net/progit/" target="_blank" rel="noopener">Pro Git</a></li>
+<li><a href="http://rogerdudler.github.io/git-guide/index.zh.html" target="_blank" rel="noopener">git - 简明指南</a></li>
+<li><a href="http://backlogtool.com/git-guide/cn/" target="_blank" rel="noopener">猴子都能懂的GIT入门</a></li>
+</ul>
+<h2 id="Git-使用交互流程"><a href="#Git-使用交互流程" class="headerlink" title="Git 使用交互流程"></a>Git 使用交互流程</h2><p>![git交互模型](media/Git_&amp;_GitHub. assets/git交互模型-1571974764974.png)</p>
+<h2 id="安装和配置-Git-环境"><a href="#安装和配置-Git-环境" class="headerlink" title="安装和配置 Git 环境"></a>安装和配置 Git 环境</h2><p>下载地址：<a href="https://git-scm.com/" target="_blank" rel="noopener">https://git-scm.com/</a></p>
+<h3 id="git-bash-常用命令"><a href="#git-bash-常用命令" class="headerlink" title="git-bash 常用命令"></a>git-bash 常用命令</h3><p>git-bash </p>
+<h3 id="初始化Git仓库"><a href="#初始化Git仓库" class="headerlink" title="初始化Git仓库"></a>初始化Git仓库</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 找到目标文件夹并进入</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 右键  选择 Git Bash Here</span></span><br><span class="line"></span><br><span class="line">git init</span><br><span class="line"></span><br><span class="line">git init 项目名称</span><br><span class="line"><span class="meta">#</span><span class="bash"> 自动创建 项目目录 并且 初始化git 仓库</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="配置个人信息"><a href="#配置个人信息" class="headerlink" title="配置个人信息"></a>配置个人信息</h3><p>在用户目录下生成 <code>.gitconfig</code> 文件</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 方便每次备份将使用者信息备份起来，方便操作</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 设置用户名</span></span><br><span class="line">git config --global user.name "answer-zf"</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 配置用户邮箱</span></span><br><span class="line">git config --global user.email "feng18255163789@gmail"</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 设置 gitk 图形查看工具中文显示默认编码（防止乱码）</span></span><br><span class="line">git config --global gui.encoding utf-8</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 查看配置列表项</span></span><br><span class="line">git config --list</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a>基本使用</h2><h3 id="将文件备份到Git仓库中"><a href="#将文件备份到Git仓库中" class="headerlink" title="将文件备份到Git仓库中"></a>将文件备份到Git仓库中</h3><p><strong>操作 Git 的基本工作流程就是先修改文件，然后执行 <code>git add</code> 命令。</strong><br><strong><code>git add</code> 命令会把文件加入到暂存区，接着就可以执行 <code>git commit</code> 命令，将文件存入文档库，</strong><br><strong>从而形成一次历史记录。</strong></p>
+<p><strong>暂存区：</strong></p>
+<ul>
+<li>可作为临时版本库</li>
+<li>可将修改的多个文件分多次提交<ul>
+<li>按照不同的修改分类提交</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 先存放置暂存区</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git add ./readme.md</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 再提交到版本库</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git commit -m <span class="string">"complete the first function！"</span>    <span class="comment"># -m : 说明信息（便于查看）</span></span></span><br><span class="line"> </span><br><span class="line">----------------------</span><br><span class="line"><span class="meta"> 	#</span><span class="bash"> 不输入 -m 会进去vim编辑器环境输说明信息。</span></span><br><span class="line"><span class="meta"> 	#</span><span class="bash"> 在vim里输入说明信息后 Esc键 + :Wp 即可    <span class="comment"># w：保存 p：退出</span></span></span><br><span class="line"><span class="meta"> 	#</span><span class="bash"> 强制退出：Esc键 + :p</span></span><br><span class="line"> 	</span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">#**************************************************************************</span></span></span><br><span class="line"> 	</span><br><span class="line"><span class="meta">#</span><span class="bash"> 把所有的文件存放到暂存区</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git add --all</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git add .</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git add ./	<span class="comment"># 当前文件夹所有文件</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 一次性把所有修改后的文件直接放到版本库中</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git commit --all -m <span class="string">"这是一次性操作"</span>        <span class="comment"># --all : 把所有修改后的文件直接放到版本库中</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 前提所有文件均被版本管理（提交过一次）</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 使用一次新的commit，替代上一次提交 （修改commit的提交信息）</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 如果代码没有任何新变化，则用来改写上一次commit的提交信息</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git commit --amend -m [message]</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 重做上一次commit，并包括指定文件的新变化</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git commit --amend [file1] [file2] ...</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="删除、修改工作区文件"><a href="#删除、修改工作区文件" class="headerlink" title="删除、修改工作区文件"></a>删除、修改工作区文件</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># 删除工作区文件，并且将这次删除放入暂存区</span></span><br><span class="line">$ git rm [file1] [file2] ...</span><br><span class="line"></span><br><span class="line"><span class="comment"># 停止追踪指定文件，但该文件会保留在工作区</span></span><br><span class="line">$ git rm --cached [file]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 改名文件，并且将这个改名放入暂存区</span></span><br><span class="line">$ git mv [file-original] [file-renamed]</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="查看状态"><a href="#查看状态" class="headerlink" title="查看状态"></a>查看状态</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">$ git status</span><br><span class="line"></span><br><span class="line"><span class="comment"># Changes not staged for commit</span></span><br><span class="line"><span class="comment"># modified （红色）  =&gt;  文件已修改，但未放入暂存区</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Changes to be committed</span></span><br><span class="line"><span class="comment"># modified （绿色）  =&gt;  文件已经放入暂存区</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># nothing to commit, working tree clean  ==&gt; 文件已经在工作区</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="查看提交日志"><a href="#查看提交日志" class="headerlink" title="查看提交日志"></a>查看提交日志</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 查看历史日志</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">log</span>   </span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 查看精简日志，单行显示</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">log</span> --oneline</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> **************************************************</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 日志过长会自动进入 less 查看模式</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 查看每次切换版本记录</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git reflog</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="打开图形界面"><a href="#打开图形界面" class="headerlink" title="打开图形界面"></a>打开图形界面</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> gitk</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="撤销、回滚"><a href="#撤销、回滚" class="headerlink" title="撤销、回滚"></a>撤销、回滚</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 恢复暂存区的指定文件到工作区</span></span><br><span class="line">$ git checkout [file]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 恢复某个commit的指定文件到暂存区和工作区</span></span><br><span class="line">$ git checkout [commit] [file]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 恢复暂存区的所有文件到工作区</span></span><br><span class="line">$ git checkout .</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重置暂存区的指定文件，与上一次commit保持一致，但工作区不变</span></span><br><span class="line">$ git reset [file]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重置暂存区与工作区，与上一次commit保持一致</span></span><br><span class="line">$ git reset --hard</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重置当前分支的指针为指定commit，同时重置暂存区，但工作区不变</span></span><br><span class="line">$ git reset [commit]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重置当前分支的HEAD为指定commit，同时重置暂存区和工作区，与指定commit一致</span></span><br><span class="line">$ git reset --hard [commit]</span><br><span class="line"></span><br><span class="line"><span class="comment"># ex-----------------------------------------</span></span><br><span class="line">$ git reset --hard Head~0    <span class="comment"># Head~0   回退到上一次提交代码时的状态</span></span><br><span class="line">							 <span class="comment"># Head~1   回退到上上一次提交代码时的状态</span></span><br><span class="line">							 </span><br><span class="line">							 <span class="comment"># hard     允许工作区代码被以前的代码覆盖</span></span><br><span class="line">							 </span><br><span class="line"><span class="comment"># 可以通过版本号精确回退到某一次提交的状态</span></span><br><span class="line">$ git reset --hard b0750f9   <span class="comment">## b0750f9 ：版本号</span></span><br><span class="line"><span class="comment"># -------------------------------------------</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 重置当前HEAD为指定commit，但保持暂存区和工作区不变</span></span><br><span class="line">$ git reset --keep [commit]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个commit，用来撤销指定commit</span></span><br><span class="line"><span class="comment"># 后者的所有变化都将被前者抵消，并且应用到当前分支</span></span><br><span class="line">$ git revert [commit]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 暂时将未提交的变化移除，稍后再移入</span></span><br><span class="line">$ git stash</span><br><span class="line">$ git stash pop</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="分支（-默认有一个主分支-master）"><a href="#分支（-默认有一个主分支-master）" class="headerlink" title="分支（ 默认有一个主分支 master）"></a>分支（ 默认有一个主分支 master）</h2><h3 id="分支基础"><a href="#分支基础" class="headerlink" title="分支基础"></a>分支基础</h3><p>默认在 git 的仓库中，会有个分支的原点：master</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 列出所有本地分支</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git branch</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 基于当前分支新建一个分支，但依然停留在当前分支</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git branch [branch-name]</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 基于当前分支新建一个分支，并切换到该分支</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git checkout -b [branch]</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 切换到指定分支，并更新工作区</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git checkout [branch-name]</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 切换到上一个分支，交替和上一个分支进行切换</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git checkout -</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 合并 指定分支 到 当前分支</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git merge [branch]</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 删除分支(不能是当前所处分支)</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git branch -d [branch-name]</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>对于没有提交到暂存区的工作区的修改文件，无论切换到那个分支，内容不变，处于待提交到暂存区状态</li>
+<li>对于没有提交到版本库的暂存区的文件，无论切换到那个分支，内容不变，处于待提交到版本库状态</li>
+<li>也就是说 只有 commit 到的指定分支 才能对该分支进行操作</li>
+</ul>
+<h3 id="合并分支冲突"><a href="#合并分支冲突" class="headerlink" title="合并分支冲突"></a>合并分支冲突</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># 在dev分支提交了代码以后</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># 又在主分支master提交了代码</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># 合并分支以后，需要手动处理，在提交到主分支中</span></span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="Git-工作流程：分支策略"><a href="#Git-工作流程：分支策略" class="headerlink" title="Git 工作流程：分支策略"></a>Git 工作流程：分支策略</h2><p><a href="http://www.ruanyifeng.com/blog/2015/12/git-workflow.html" target="_blank" rel="noopener">Git 工作流程</a></p>
+<h3 id="Git-Flow"><a href="#Git-Flow" class="headerlink" title="Git Flow"></a>Git Flow</h3><p><a href="http://www.ruanyifeng.com/blog/2012/07/git.html" target="_blank" rel="noopener">Git分支管理策略</a> </p>
+<h3 id="Github-Collabrators"><a href="#Github-Collabrators" class="headerlink" title="Github Collabrators"></a>Github Collabrators</h3><p>这种方式公司团队项目使用居多</p>
+<ul>
+<li>进入项目</li>
+<li>settings - &gt; Collaborators </li>
+<li>添加 协作者 </li>
+</ul>
+<h3 id="Github-Flow"><a href="#Github-Flow" class="headerlink" title="Github Flow"></a>Github Flow</h3><p>这种方式开源项目使用居多</p>
+<ul>
+<li>fork</li>
+<li>clone 到你的本地</li>
+<li>在clone下来的项目中拉出一个新的分支<ul>
+<li>修改的时候最好是基于 master 拉出一个修改的分支，例如这个分支是用来添加某个功能的</li>
+</ul>
+</li>
+<li>在新分支上开发或者修改完成之后，提交到本地仓库，然后 push 推到自己的账户中 fork 过来的仓库</li>
+<li>最后，在 Github 上你 fork 过来的仓库界面中找到 New Pull Request 发起提交请求</li>
+<li>对方就会在仓库的 Pull Requests 中收到你发起的提交请求<ul>
+<li>然后双方就可以使用社会化交流方式进行沟通协作</li>
+<li>例如 Code Review 代码审查</li>
+</ul>
+</li>
+<li>最后对方审查通过没有问题之后，选择 Merge Request</li>
+<li>到此，一个完整的 Github 工作流结束</li>
+<li>这种方式开源项目更多一些（大家都不认识）</li>
+</ul>
+<h3 id="Gitlab-Flow"><a href="#Gitlab-Flow" class="headerlink" title="Gitlab Flow"></a>Gitlab Flow</h3><h4 id="Gitlab"><a href="#Gitlab" class="headerlink" title="Gitlab"></a>Gitlab</h4><p><a href="https://about.gitlab.com/" target="_blank" rel="noopener">Gitlab</a></p>
+<p>Gitlab 是一个开源的类似于 Github 的一个系统，开源免费部署到自己的公司内容。</p>
+<h2 id="GIT-报错集合"><a href="#GIT-报错集合" class="headerlink" title="GIT 报错集合"></a>GIT 报错集合</h2><h3 id="将文件存放置暂存区警告："><a href="#将文件存放置暂存区警告：" class="headerlink" title="将文件存放置暂存区警告："></a>将文件存放置暂存区警告：</h3><blockquote>
+<p>warning: LF will be replaced by CRLF in Config_Document/VS Code_Config/.vscode/settings.json.</p>
+<p>The file will have its original line endings in your working directory</p>
+</blockquote>
+<p>解决：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git config --global core.autocrlf <span class="literal">false</span></span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="Git-Bash-中文乱码："><a href="#Git-Bash-中文乱码：" class="headerlink" title="Git Bash 中文乱码："></a>Git Bash 中文乱码：</h3><p>![Snipaste_2019-10-27_14-04-08](media/Git_&amp;_GitHub. assets/Snipaste_2019-10-27_14-04-08.png)</p>
+<h1 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a>GitHub</h1><p><strong>让你使用社交化的方式进行编程协作</strong></p>
+<p><strong>主要作用：</strong></p>
+<ul>
+<li>可以免费在线托管你的仓库</li>
+<li>可以实现多人协作</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Operate</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Sublime_Operate</title>
+    <url>/2019/11/01/Sublime-Operate/</url>
+    <content><![CDATA[<h2 id="Dos-常用命令"><a href="#Dos-常用命令" class="headerlink" title="Dos 常用命令"></a>Dos 常用命令</h2><h3 id="CMD操作类"><a href="#CMD操作类" class="headerlink" title="CMD操作类"></a>CMD操作类</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 切盘</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> D:</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 删除文件</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> del</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 退出dos</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">exit</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 清空命令行</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> cls</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> &amp;&amp;   同时执行两个操作 用 &amp;&amp; 衔接</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="目录操作类"><a href="#目录操作类" class="headerlink" title="目录操作类"></a>目录操作类</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">显示目录</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> dir   <span class="comment">## 详细</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">创建目录</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> md 目录名</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">删除目录</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> rd 目录名</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> rd /s/q 目录名   <span class="comment">## 强制删除文件文件夹和文件夹内所有文件</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">进入指定目录</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> 目录名</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">树形图显示目录结构</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> tree</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="文件操作类"><a href="#文件操作类" class="headerlink" title="文件操作类"></a>文件操作类</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 重名名文件</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> ren</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">#####	进阶操作  ==&gt;  批量重命名(指定字符串替换)</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> ren *.html *.php</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 替换文件</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> replace</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 删除文件</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> replace</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> del 文件名</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 创建文件</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">echo</span> on &gt; a.txt</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 向文件添加内容 （覆盖）</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">echo</span> 内容 &gt; a.txt</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 向文件添加内容 （向后追加）</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">echo</span> 追加 &gt;&gt; a.txt</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h3 id="服务操作类"><a href="#服务操作类" class="headerlink" title="服务操作类"></a>服务操作类</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 查询服务</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sc query MySQL</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 启动服务</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> net start MySQL</span></span><br><span class="line">		</span><br><span class="line"><span class="meta">#</span><span class="bash"> 停止服务</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> net stop MySQL</span></span><br><span class="line">		</span><br><span class="line"><span class="meta">#</span><span class="bash"> 删除服务</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sc delete MySQL</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 查询端口情况</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> netstat -ano</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h2><p>Git Bash / Cmder 可以模拟Linux环境，在Windows操作</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># 清屏</span></span><br><span class="line">clear</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示文件夹列表 （显示不隐藏的文件与文件夹） </span></span><br><span class="line">ls</span><br><span class="line">ls -a  <span class="comment"># (显示当前目录下的所有文件及文件夹包括隐藏的.和..等)</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示工作目录 </span></span><br><span class="line"><span class="built_in">pwd</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除一个文件或者目录</span></span><br><span class="line">rm 文件名</span><br><span class="line"><span class="comment"># 删除非空目录，以及一些比较顽固的文件或者目录</span></span><br><span class="line">rm -rf 目录名</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建目录</span></span><br><span class="line">touch 文件名</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看文件（完整输出）</span></span><br><span class="line">cat 文件名</span><br><span class="line"><span class="comment"># 向文件添加内容 （覆盖）</span></span><br><span class="line">cat &gt; a.txt （回车后 添加内容）</span><br><span class="line"><span class="comment"># 向文件添加内容 （向后追加）</span></span><br><span class="line">cat &gt;&gt; a.txt （回车后 添加内容）</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看文件（分页输出）-- 适用于查看大文本文件</span></span><br><span class="line">less 文件名 		<span class="comment"># b 向上翻一页    空格 向下翻一页    鼠标滚轮翻页</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># visual interface 编辑文本</span></span><br><span class="line">vi 文件名		<span class="comment"># 进去vi编辑模式</span></span><br><span class="line">Esc         <span class="comment"># 退出到命令模式</span></span><br><span class="line">i 					<span class="comment"># 进入插入模式</span></span><br><span class="line">:q 					<span class="comment"># 退出vi</span></span><br><span class="line">:w 					<span class="comment"># 保存编辑</span></span><br><span class="line">:wq 				<span class="comment"># 保存并退出</span></span><br><span class="line">:q! 				<span class="comment"># 强制退出不保存修改</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="Window"><a href="#Window" class="headerlink" title="Window"></a>Window</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">sysdm.cpl  cmd 开启服务</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 显示桌面			==&gt;   win + D</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 最小化所有窗口	  ==&gt;   win + M</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 最小化除当前窗口以外所有窗口	==&gt;   win + HOME</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 打开资源管理器	  ==&gt;   win + E</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 打开设置	        ==&gt;   win + I</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 截图			 ==&gt;   win + PrintScreen</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 放大缩小视口	  ==&gt;   WIN + +/-</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 切换输入法    	   ==&gt;   WIN + space</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 自定义截图		   ==&gt;   WIN + SHFIT +S</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">win + Ctrl + D       新建桌面</span><br><span class="line">win + Ctrl + 方向键   切换桌面</span><br><span class="line">win + tab						 列表</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="Sublime"><a href="#Sublime" class="headerlink" title="Sublime"></a>Sublime</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 命令行 用 sublime 打开当前目录 .表示当前目录</span></span><br><span class="line">subl .</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 命令行 用 vscode 打开当前目录</span></span><br><span class="line">code .</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 删除整行  		==&gt;    CTRL + SHIFT + K </span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 括号内部选中  	   ==&gt;    CTRL + SHIFT + M</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 直接跳下一行  	   ==&gt;    CTRL + ENTER</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 直接跳上一行  	   ==&gt;    CTRL + SHIFT + ENTER</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 查找选择器		    ==&gt;	   CTRL + R</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 替换同一个目录下所有文件公共部分</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> ==&gt;侧边栏目录下子文件右键选项   Find Advanced  &gt;  In Parent Folder </span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 打开所在目录		==&gt;    右击文件选  Reveal</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="Browser"><a href="#Browser" class="headerlink" title="Browser"></a>Browser</h2><h3 id="Chrome"><a href="#Chrome" class="headerlink" title="Chrome"></a>Chrome</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> console 命令行截图    ==&gt;     Capture node screenshot</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="搜索栏技巧"><a href="#搜索栏技巧" class="headerlink" title="搜索栏技巧"></a>搜索栏技巧</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 搜索关键词如有空格，可用  <span class="string">""</span>  包含，视为一个词</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 搜索限定</span></span><br><span class="line"></span><br><span class="line"><span class="meta">$</span><span class="bash"> 关键词 + site:cnblogs.com</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 限定在 cnblogs.com 搜索</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="右键菜单分栏设置地址"><a href="#右键菜单分栏设置地址" class="headerlink" title="右键菜单分栏设置地址"></a>右键菜单分栏设置地址</h2><blockquote>
+<p>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Operate</category>
+      </categories>
+      <tags>
+        <tag>cmd</tag>
+      </tags>
+  </entry>
+</search>
