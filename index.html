@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next gemini use-motion" lang="zh-Hans">
+<html class="theme-next mist use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -42,6 +42,38 @@
   
   <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="https://fonts.cat.net/css?family=Roboto Slab:300,300italic,400,400italic,700,700italic|Roboto Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
 
 
 
@@ -92,7 +124,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Gemini',
+    scheme: 'Mist',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
@@ -186,12 +218,12 @@
         </li>
       
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-history"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
-            归档
+            关于
           </a>
         </li>
       
@@ -216,12 +248,12 @@
         </li>
       
         
-        <li class="menu-item menu-item-about">
-          <a href="/about" rel="section">
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-history"></i> <br />
             
-            关于
+            归档
           </a>
         </li>
       
@@ -292,6 +324,195 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://answer-zf.github.io/2019/11/02/NodeJS/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="answer-zf">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="再进步一点点">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/11/02/NodeJS/" itemprop="url">NodeJS</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-02T08:54:39+08:00">
+                2019-11-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">•</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Server/" itemprop="url" rel="index">
+                    <span itemprop="name">Server</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">•</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/11/02/NodeJS/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/11/02/NodeJS/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2019/11/02/NodeJS/" class="leancloud_visitors" data-flag-title="NodeJS">
+               <span class="post-meta-divider">•</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+                 <span class="leancloud-visitors-count"></span>
+                 <span class="post-meta-divider">•</span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount" style="display: inline-block">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                <span title="字数统计">
+                  8.7k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">•</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                <span title="阅读时长">
+                  36 min
+                </span>
+              
+            </div>
+          
+
+          
+              <div class="post-description">
+                  如果说我比别人看得更远些,那是因为我站在了各位大佬的肩上.
+              </div>
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p><img src="https://blog-1257820412.cos.ap-shanghai.myqcloud.com/title/half_year.jpg" alt="pic"></p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/11/02/NodeJS/" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+    <div>
+    
+    </div>
+    
+
+    
+
+    
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://answer-zf.github.io/2019/11/01/sublime/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -320,28 +541,13 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
               <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-01T17:05:58+08:00">
                 2019-11-01
               </time>
             
 
             
-              <span class="post-meta-divider">|</span>
-            
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2019-11-01T17:06:41+08:00">
-                2019-11-01
-              </time>
             
           </span>
 
@@ -349,13 +555,57 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">•</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/11/01/sublime/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/11/01/sublime/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
           
+             <span id="/2019/11/01/sublime/" class="leancloud_visitors" data-flag-title="sublime">
+               <span class="post-meta-divider">•</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+                 <span class="leancloud-visitors-count"></span>
+                 <span class="post-meta-divider">•</span>
+             </span>
+          
 
           
 
+          
+            <div class="post-wordcount" style="display: inline-block">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                <span title="字数统计">
+                  646
+                </span>
+              
+
+              
+                <span class="post-meta-divider">•</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                <span title="阅读时长">
+                  3 min
+                </span>
+              
+            </div>
           
 
           
@@ -374,12 +624,10 @@
 
       
         
-          
-          插件12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152## 汉化插件$ Localization## 格式化代码插件$ JSFormat							## js
-          ...
+          <h2 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h2>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/11/01/sublime/#more" rel="contents">
+            <a class="btn" href="/2019/11/01/sublime/" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -459,42 +707,24 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
               <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-01T13:53:45+08:00">
                 2019-11-01
               </time>
             
 
             
-              <span class="post-meta-divider">|</span>
-            
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2019-11-01T13:54:51+08:00">
-                2019-11-01
-              </time>
             
           </span>
 
           
             <span class="post-category" >
             
-              <span class="post-meta-divider">|</span>
+              <span class="post-meta-divider">•</span>
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Operate/" itemprop="url" rel="index">
@@ -510,13 +740,57 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">•</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/11/01/git/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/11/01/git/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
           
+             <span id="/2019/11/01/git/" class="leancloud_visitors" data-flag-title="git">
+               <span class="post-meta-divider">•</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+                 <span class="leancloud-visitors-count"></span>
+                 <span class="post-meta-divider">•</span>
+             </span>
+          
 
           
 
+          
+            <div class="post-wordcount" style="display: inline-block">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                <span title="字数统计">
+                  1.9k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">•</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                <span title="阅读时长">
+                  7 min
+                </span>
+              
+            </div>
           
 
           
@@ -535,20 +809,10 @@
 
       
         
-          
-          维基百科 - Git
-Git 介绍
-Git教程 - 廖雪峰
-Pro Git
-git - 简明指南
-猴子都能懂的GIT入门
-
-Git 使用交互流程![git交互模型](media/Git_&amp;_GitHub. assets/git交互模型-1571974764974.png)
-安装和配置 Git
-          ...
+          <p><a href="https://zh.wikipedia.org/wiki/Git" target="_blank" rel="noopener">维基百科 - Git</a></p>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/11/01/git/#more" rel="contents">
+            <a class="btn" href="/2019/11/01/git/" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -628,42 +892,24 @@ Git 使用交互流程![git交互模型](media/Git_&amp;_GitHub. assets/git交�
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
               <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-01T10:37:12+08:00">
                 2019-11-01
               </time>
             
 
             
-              <span class="post-meta-divider">|</span>
-            
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2019-11-01T13:42:34+08:00">
-                2019-11-01
-              </time>
             
           </span>
 
           
             <span class="post-category" >
             
-              <span class="post-meta-divider">|</span>
+              <span class="post-meta-divider">•</span>
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Operate/" itemprop="url" rel="index">
@@ -679,13 +925,57 @@ Git 使用交互流程![git交互模型](media/Git_&amp;_GitHub. assets/git交�
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">•</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/11/01/Sublime-Operate/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/11/01/Sublime-Operate/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
           
+             <span id="/2019/11/01/Sublime-Operate/" class="leancloud_visitors" data-flag-title="Sublime_Operate">
+               <span class="post-meta-divider">•</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+                 <span class="leancloud-visitors-count"></span>
+                 <span class="post-meta-divider">•</span>
+             </span>
+          
 
           
 
+          
+            <div class="post-wordcount" style="display: inline-block">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                <span title="字数统计">
+                  817
+                </span>
+              
+
+              
+                <span class="post-meta-divider">•</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                <span title="阅读时长">
+                  3 min
+                </span>
+              
+            </div>
           
 
           
@@ -704,16 +994,10 @@ Git 使用交互流程![git交互模型](media/Git_&amp;_GitHub. assets/git交�
 
       
         
-          
-          Dos 常用命令CMD操作类1234567891011121314# 切盘$ D:# 删除文件$ del# 退出dos$ exit# 清空命令行$ cls# &amp;&amp;   同时执行两个操作 用 &amp;&amp; 衔接
-
-
-
-目录操作类12345678910111213141516#显
-          ...
+          <h2 id="Dos-常用命令"><a href="#Dos-常用命令" class="headerlink" title="Dos 常用命令"></a>Dos 常用命令</h2><h3 id="CMD操作类"><a href="#CMD操作类" class="headerlink" title="CMD操作类"></a>CMD操作类</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 切盘</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> D:</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 删除文件</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> del</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 退出dos</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">exit</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 清空命令行</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> cls</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> &amp;&amp;   同时执行两个操作 用 &amp;&amp; 衔接</span></span><br></pre></td></tr></table></figure>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/11/01/Sublime-Operate/#more" rel="contents">
+            <a class="btn" href="/2019/11/01/Sublime-Operate/" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -802,7 +1086,7 @@ Git 使用交互流程![git交互模型](media/Git_&amp;_GitHub. assets/git交�
               
                 <a href="/archives%7C%7C%20history">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -813,7 +1097,7 @@ Git 使用交互流程![git交互模型](media/Git_&amp;_GitHub. assets/git交�
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -824,7 +1108,7 @@ Git 使用交互流程![git交互模型](media/Git_&amp;_GitHub. assets/git交�
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -868,12 +1152,18 @@ Git 使用交互流程![git交互模型](media/Git_&amp;_GitHub. assets/git交�
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright" style="text-align:center">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-sun-o"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">answer-zf</span>
 
+  
+    <span class="post-meta-divider"></span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    <span title="Site words total count">12.1k</span>
   
 </div>
 
@@ -886,6 +1176,25 @@ Git 使用交互流程![git交互模型](media/Git_&amp;_GitHub. assets/git交�
 
 
         
+<div class="busuanzi-count" style="text-align: center">
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
 
 
 
@@ -921,8 +1230,6 @@ Git 使用交互流程![git交互模型](media/Git_&amp;_GitHub. assets/git交�
 
   
 
-
-  
 
 
 
@@ -964,11 +1271,6 @@ Git 使用交互流程![git交互模型](media/Git_&amp;_GitHub. assets/git交�
     <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   
 
-  
-  
-    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
-  
-
 
   
 
@@ -981,13 +1283,6 @@ Git 使用交互流程![git交互模型](media/Git_&amp;_GitHub. assets/git交�
 
   
   
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
-
-
 
   
 
@@ -1028,6 +1323,28 @@ Git 使用交互流程![git交互模型](media/Git_&amp;_GitHub. assets/git交�
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'F6ewdTzrnREvRX1LumVOVo6A-gzGzoHsz',
+        appKey: 'V10wq1YvEqBEX5lhdsHNGD5E',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
@@ -1355,6 +1672,113 @@ Git 使用交互流程![git交互模型](media/Git_&amp;_GitHub. assets/git交�
 
 
   
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("F6ewdTzrnREvRX1LumVOVo6A-gzGzoHsz", "V10wq1YvEqBEX5lhdsHNGD5E");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
 
   
 
