@@ -1,9 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>花店相关设计</title>
+    <url>/2019/11/06/%E8%8A%B1%E5%BA%97%E7%9B%B8%E5%85%B3%E8%AE%BE%E8%AE%A1/</url>
+    <content><![CDATA[<p><img src="https://i.loli.net/2019/11/06/fktFnq19cSVPCWz.png" alt="design-FlowerShop-avatar.png"></p>
+<a id="more"></a>
+
+<h2 id="朋友介绍的小小私单，彬彬花市实体店相关设计"><a href="#朋友介绍的小小私单，彬彬花市实体店相关设计" class="headerlink" title="朋友介绍的小小私单，彬彬花市实体店相关设计"></a>朋友介绍的小小私单，彬彬花市实体店相关设计</h2><p>设计涵盖：微信宣传，海报，微信公众号头像…</p>
+<h3 id="微信公众号头像"><a href="#微信公众号头像" class="headerlink" title="微信公众号头像"></a>微信公众号头像</h3><p>主图便是，定稿的公众号头像，设计了三款，采用了这一款，其他两个实在拿不出手，就不贴图了。</p>
+<p><img src="https://i.loli.net/2019/11/06/gJotQHlWh5zM8nV.jpg" alt="4ceea30e565c05344443001840e5524.jpg"></p>
+<p>就是这家店</p>
+<blockquote>
+<p>吐槽一下，主题logo实在太丑没有下手的空间<br>ps: 这也是事多的老板</p>
+</blockquote>
+<h3 id="最蛋疼的设计"><a href="#最蛋疼的设计" class="headerlink" title="最蛋疼的设计"></a>最蛋疼的设计</h3><p>最心力交瘁的设计，不在设计本身，在老板事多，不想多少，改了一堆稿才定下</p>
+<p><img src="https://i.loli.net/2019/11/06/sGMqVpTul2LYJ9B.jpg" alt="f89d22627d71ed1fefeac2208c7f5b1.jpg"></p>
+<h3 id="一稿过的招聘海报"><a href="#一稿过的招聘海报" class="headerlink" title="一稿过的招聘海报"></a>一稿过的招聘海报</h3><p><code>最满意的设计元素：飘花和小女孩让海报栩栩如生</code></p>
+<p><img src="https://i.loli.net/2019/11/06/fGlIF4baZ3kgOTJ.jpg" alt="图层1拷贝3.jpg"></p>
+]]></content>
+      <categories>
+        <category>For Design</category>
+        <category>平面相关</category>
+      </categories>
+      <tags>
+        <tag>头像</tag>
+        <tag>海报</tag>
+        <tag>微信二维码</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>NodeJS</title>
     <url>/2019/11/02/NodeJS/</url>
-    <content><![CDATA[<p><img src="https://blog-1257820412.cos.ap-shanghai.myqcloud.com/title/half_year.jpg" alt="pic"></p>
+    <content><![CDATA[<p><img src="https://i.loli.net/2019/11/06/pbE4CyU5xaRo6i3.png" alt="secure-rest-api-in-nodejs-18f43b3033c239da5d2525cfd9fdc98f.png"></p>
 <a id="more"></a>
 
 <h2 id="Node-js-概述"><a href="#Node-js-概述" class="headerlink" title="Node.js 概述"></a>Node.js 概述</h2><ul>
@@ -895,17 +923,22 @@
 
 <h5 id="启动-1"><a href="#启动-1" class="headerlink" title="启动"></a>启动</h5><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">json-server --watch 文件名</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
+        <category>For Code</category>
         <category>Server</category>
       </categories>
       <tags>
-        <tag>NodeJS</tag>
+        <tag>CommonJS</tag>
+        <tag>Express</tag>
+        <tag>Promise</tag>
       </tags>
   </entry>
   <entry>
     <title>sublime</title>
-    <url>/2019/11/01/sublime/</url>
-    <content><![CDATA[<h2 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h2><a id="more"></a>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># 汉化插件</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> Localization</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># 格式化代码插件</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> JSFormat							<span class="comment">## js  格式化代码    shift+alt+j</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> HTML-CSS-JS Prettify				<span class="comment">## html格式化代码	shift+alt+h</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> CodeFormatter						<span class="comment">## 通用格式化代码	   shift+alt+f </span></span></span><br><span class="line">			   ---------------------</span><br><span class="line">									## sublime 只支持php5.6-php7.2的php版本</span><br><span class="line">									## 更改配置信息：</span><br><span class="line">									## "php_path": "C:/Develop/php-7.1.31/php.exe",</span><br><span class="line">									</span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># 侧边栏优化插件</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> SideBarEnhancements				<span class="comment">## 具体配置见注释</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># 最牛逼的插件：</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> Emmet                             <span class="comment">## 牛逼到不用解释！</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># 代码颜色插件：</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> Color Highlighter</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># 最棒的注释插件：</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> DocBlockr                         <span class="comment">## 快捷键：/** + enter</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># 括号匹配插件：</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> Bracket Highlighter</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># 快捷文件名输入插件：</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> AutoFileName</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># 等号对其插件：</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> Alignment							<span class="comment">## 快捷键：alt+shift+e</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># 转码插件：</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> ConvertToUTF8</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># 头部注释插件：</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> FILE HEADER                       <span class="comment">## 自定义创建头部注释（详情配置见备注）</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># 语法错误检测插件</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sublimelinter 					<span class="comment">## 错误日志视图快捷键： ctrl+k,ctrl+e</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">$</span><span class="bash"> sublimelinter-php 				<span class="comment">## 具体见备注</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> SublimeLinter-jshint</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> SublimeLinter-csslint</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># PHP调试插件</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> Xdebug Client</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># 主题预览插件</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> colorsublime</span></span><br></pre></td></tr></table></figure>
+    <url>/2019/11/01/SublimeConfig/</url>
+    <content><![CDATA[<p><img src="https://i.loli.net/2019/11/06/RYC46mGlSPM8daQ.png" alt="Dicas-para-aumentar-a-produtividade-com-Sublime-Text-3.png"></p>
+<a id="more"></a>
+
+<h2 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># 汉化插件</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> Localization</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># 格式化代码插件</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> JSFormat							<span class="comment">## js  格式化代码    shift+alt+j</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> HTML-CSS-JS Prettify				<span class="comment">## html格式化代码	shift+alt+h</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> CodeFormatter						<span class="comment">## 通用格式化代码	   shift+alt+f </span></span></span><br><span class="line">			   ---------------------</span><br><span class="line">									## sublime 只支持php5.6-php7.2的php版本</span><br><span class="line">									## 更改配置信息：</span><br><span class="line">									## "php_path": "C:/Develop/php-7.1.31/php.exe",</span><br><span class="line">									</span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># 侧边栏优化插件</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> SideBarEnhancements				<span class="comment">## 具体配置见注释</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># 最牛逼的插件：</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> Emmet                             <span class="comment">## 牛逼到不用解释！</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># 代码颜色插件：</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> Color Highlighter</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># 最棒的注释插件：</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> DocBlockr                         <span class="comment">## 快捷键：/** + enter</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># 括号匹配插件：</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> Bracket Highlighter</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># 快捷文件名输入插件：</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> AutoFileName</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># 等号对其插件：</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> Alignment							<span class="comment">## 快捷键：alt+shift+e</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># 转码插件：</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> ConvertToUTF8</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># 头部注释插件：</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> FILE HEADER                       <span class="comment">## 自定义创建头部注释（详情配置见备注）</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># 语法错误检测插件</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sublimelinter 					<span class="comment">## 错误日志视图快捷键： ctrl+k,ctrl+e</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">$</span><span class="bash"> sublimelinter-php 				<span class="comment">## 具体见备注</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> SublimeLinter-jshint</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> SublimeLinter-csslint</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># PHP调试插件</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> Xdebug Client</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># 主题预览插件</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> colorsublime</span></span><br></pre></td></tr></table></figure>
 
 
 
@@ -934,12 +967,22 @@
 <h2 id="设置配置"><a href="#设置配置" class="headerlink" title="设置配置"></a>设置配置</h2><h2 id="连体字"><a href="#连体字" class="headerlink" title="连体字"></a>连体字</h2><figure class="highlight"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">//连体字符设置</span><br><span class="line">"font_face": "Fira Code"</span><br><span class="line"></span><br><span class="line">## 常用编程字体：</span><br><span class="line">-- Consolas</span><br><span class="line">-- Fira Code</span><br><span class="line">-- Source Code Pro</span><br></pre></td></tr></table></figure>
 
 ]]></content>
+      <categories>
+        <category>For Code</category>
+        <category>Operate</category>
+      </categories>
+      <tags>
+        <tag>Sublime</tag>
+        <tag>Config</tag>
+      </tags>
   </entry>
   <entry>
     <title>git</title>
     <url>/2019/11/01/git/</url>
-    <content><![CDATA[<p><a href="https://zh.wikipedia.org/wiki/Git" target="_blank" rel="noopener">维基百科 - Git</a></p>
+    <content><![CDATA[<p><img src="https://i.loli.net/2019/11/06/67de1NQfrwzL3pc.jpg" alt="timg.jpg"></p>
 <a id="more"></a>
+
+<p><a href="https://zh.wikipedia.org/wiki/Git" target="_blank" rel="noopener">维基百科 - Git</a></p>
 <h2 id="Git-介绍"><a href="#Git-介绍" class="headerlink" title="Git 介绍"></a>Git 介绍</h2><ul>
 <li><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/" target="_blank" rel="noopener">Git教程 - 廖雪峰</a></li>
 <li><a href="http://git.oschina.net/progit/" target="_blank" rel="noopener">Pro Git</a></li>
@@ -950,7 +993,6 @@
 <h2 id="安装和配置-Git-环境"><a href="#安装和配置-Git-环境" class="headerlink" title="安装和配置 Git 环境"></a>安装和配置 Git 环境</h2><p>下载地址：<a href="https://git-scm.com/" target="_blank" rel="noopener">https://git-scm.com/</a></p>
 <h3 id="git-bash-常用命令"><a href="#git-bash-常用命令" class="headerlink" title="git-bash 常用命令"></a>git-bash 常用命令</h3><p>git-bash </p>
 <h3 id="初始化Git仓库"><a href="#初始化Git仓库" class="headerlink" title="初始化Git仓库"></a>初始化Git仓库</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 找到目标文件夹并进入</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 右键  选择 Git Bash Here</span></span><br><span class="line"></span><br><span class="line">git init</span><br><span class="line"></span><br><span class="line">git init 项目名称</span><br><span class="line"><span class="meta">#</span><span class="bash"> 自动创建 项目目录 并且 初始化git 仓库</span></span><br></pre></td></tr></table></figure>
-
 
 
 <h3 id="配置个人信息"><a href="#配置个人信息" class="headerlink" title="配置个人信息"></a>配置个人信息</h3><p>在用户目录下生成 <code>.gitconfig</code> 文件</p>
@@ -1050,17 +1092,23 @@
 </ul>
 ]]></content>
       <categories>
+        <category>For Code</category>
         <category>Operate</category>
       </categories>
       <tags>
         <tag>git</tag>
+        <tag>github</tag>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
-    <title>Sublime_Operate</title>
-    <url>/2019/11/01/Sublime-Operate/</url>
-    <content><![CDATA[<h2 id="Dos-常用命令"><a href="#Dos-常用命令" class="headerlink" title="Dos 常用命令"></a>Dos 常用命令</h2><h3 id="CMD操作类"><a href="#CMD操作类" class="headerlink" title="CMD操作类"></a>CMD操作类</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 切盘</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> D:</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 删除文件</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> del</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 退出dos</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">exit</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 清空命令行</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> cls</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> &amp;&amp;   同时执行两个操作 用 &amp;&amp; 衔接</span></span><br></pre></td></tr></table></figure>
+    <title>BasicComputer</title>
+    <url>/2019/11/01/BasicComputer/</url>
+    <content><![CDATA[<p><img src="https://i.loli.net/2019/11/06/c4VC9NTirmtYvpj.jpg" alt="58qy5i7w8gfhcdlq.jpeg"></p>
 <a id="more"></a>
+
+<h2 id="Dos-常用命令"><a href="#Dos-常用命令" class="headerlink" title="Dos 常用命令"></a>Dos 常用命令</h2><h3 id="CMD操作类"><a href="#CMD操作类" class="headerlink" title="CMD操作类"></a>CMD操作类</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 切盘</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> D:</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 删除文件</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> del</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 退出dos</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">exit</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 清空命令行</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> cls</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> &amp;&amp;   同时执行两个操作 用 &amp;&amp; 衔接</span></span><br></pre></td></tr></table></figure>
+<!-- more -->
 
 
 <h3 id="目录操作类"><a href="#目录操作类" class="headerlink" title="目录操作类"></a>目录操作类</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">显示目录</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> dir   <span class="comment">## 详细</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">创建目录</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> md 目录名</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">删除目录</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> rd 目录名</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> rd /s/q 目录名   <span class="comment">## 强制删除文件文件夹和文件夹内所有文件</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">进入指定目录</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> 目录名</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">树形图显示目录结构</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> tree</span></span><br></pre></td></tr></table></figure>
@@ -1103,10 +1151,14 @@
 </blockquote>
 ]]></content>
       <categories>
+        <category>For Code</category>
         <category>Operate</category>
       </categories>
       <tags>
         <tag>cmd</tag>
+        <tag>Linux</tag>
+        <tag>Windows</tag>
+        <tag>Sublime</tag>
       </tags>
   </entry>
 </search>
